@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta author="Yasmim Rayane da Silva Nonato">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="container">
+            <div id="left-page">
+                <div class="img-left"></div>
+            </div>
+
+            <div id="right-page">
+                <div id="login">
+                    <form method="post">
+                        <div class="content">
+                            <h1>Login</h1>
+                            <p>Don't have an account? <a class="anchor-top" href="javascript:void(0)"
+                                    onclick="openSignin()">Create your
+                                    account</a>, it takes<br>less than a minute.</p>
+                            <div id="input-login">
+                                <span><ion-icon name="mail-outline"></ion-icon></span>
+                                <input type="email" class="email" placeholder="EMAIL ID" size="50" maxlength="50"
+                                    required>
+                                <hr>
+                                <span><ion-icon name="lock-closed-outline"></ion-icon></span>
+                                <input type="password" class="password" placeholder="PASSWORD" size="50" maxlength="12"
+                                    required>
+                                <hr>
+                                <span class="forgot"><a class="anchor-top" href="#">Forgot password?</a></span>
+                                <input type="submit" class="btn-in" value="LOGIN">
+
+                                <div id="social-media-login">
+                                    <p>Login with social media:</p>
+
+                                    <div class="icons-login">
+                                        <div id="facebook-login">
+                                            <ion-icon name="logo-facebook"
+                                                aria-label="Facebook icon"></ion-icon></ion-icon>
+                                            <a>Facebook</a>
+                                        </div>
+
+                                        <div id="google-login">
+                                            <ion-icon name="logo-google" aria-label="Gmail icon"></ion-icon></ion-icon>
+                                            <a>Gmail</a>
+                                        </div>
+
+                                        <div id="instagram-login">
+                                            <ion-icon name="logo-instagram" aria-label="Instagram icon"></ion-icon>
+                                            <a>Instagram</a>
+                                        </div>
+
+                                        <div id="x-login">
+                                            𝕏
+                                            <a>X</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="signin">
+                    <form method="post">
+                        <div class="content">
+                            <h1 class="signin">Register</h1>
+                            <p>Do have an account? <a class="anchor-top" href="javascript:void(0)"
+                                    onclick="openLogin()">Login</a> here.
+                            </p>
+                            <div id="input-signin">
+                                <span><ion-icon name="person-circle-outline"></ion-icon></span>
+                                <input type="text" class="name" placeholder="NAME" size="50" maxlength="50" required>
+                                <hr>
+                                <span><ion-icon name="mail-outline"></ion-icon></span>
+                                <input type="email" class="email" placeholder="EMAIL ID" size="50" maxlength="50"
+                                    required>
+                                <hr>
+                                <span><ion-icon name="lock-closed-outline"></ion-icon></span>
+                                <input name="password" type="password" class="password" onChange="onChange()"
+                                    placeholder="PASSWORD" size="50" maxlength="12" required>
+                                <hr>
+                                <span><ion-icon name="lock-closed-outline"></ion-icon></span>
+                                <input name="confirm" type="password" class="password" onChange="onChange()"
+                                    placeholder="PASSWORD CONFIRM" size="50" maxlength="12" required>
+                                <hr>
+                                <div id="terms">
+                                    <input type="checkbox" class="terms-box" required>
+                                    <span>I accept <a class="anchor-top" href="#">Terms and Conditions</a> & <a
+                                            class="anchor-top" href="#">Privacy
+                                            policy</a>.</span><br>
+                                </div>
+                                <input type="submit" class="btn-in" value="SIGN IN">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
